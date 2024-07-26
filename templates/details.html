@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% include "nav.html" %}
+
+<section id="about" class="contianer-fluid about-us">
+    <div class="container">
+        <div class="row session-title text-center">
+            <h2>Donor Details</h2>
+            <p>"<em>Be the reason for someone's heartbeat."</em></p>            
+        </div>
+        <div class="row border border-4 border-danger details-div justify-content-center">
+            <div class="col-md-6 text more-details">
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Full Name</th>
+                            <td>{{ r.full_name }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Gender</th>
+                            <td>{{ r.gender }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Date of Birth</th>
+                            <td>{{ r.date_of_birth|date:"d/m/Y"  }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Blood Group</th>
+                            <td>{{ r.blood_group }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Mobile Number</th>
+                            <td>{{ r.mobile_number }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Email ID</th>
+                            <td>{{ r.email_id }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+            <div class="col-md-6 image ">
+                <img style="height: 380px; width: 550px;" src="{{ r.photo.url }}" alt="">
+            </div>
+            <div class="mt-4 button" role="group" aria-label="Action Buttons">
+                <a href="{% url 'update' r.id %}" class="btn btn-warning">Edit</a>
+                <a href="{% url 'delete' r.id %}" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+{% include "footer.html" %}
+{% endblock %}

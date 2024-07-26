@@ -1,0 +1,272 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% include 'nav.html' %}
+
+<!-- ################# Slider Starts Here#######################--->
+
+<div class="slider-detail">
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="{% static 'images/slider/slide-02.jpg' %}" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class=" bounceInDown">Donate Blood & Save a Life</h5>
+                    <p class=" bounceInLeft">Blood is a necessary resource for the planned treatments and the <br>
+                        urgent interventions.
+                        It is helpful for patients who are suffering from <br> life-threatening conditions for living
+                        longer and
+                        with a <br> higher quality of life.
+                    </p>
+
+                    <div class=" vbh">
+                        <a href="{% url 'donate' %}">
+                            <div class="btn btn-success  bounceInUp"> Donate Now </div>
+                        </a>
+                        <div class="btn btn-success  bounceInUp"> Contact US </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{% static 'images/slider/slide-03.jpg' %}" alt="Third slide">
+                <div class="carousel-caption vdg-cur d-none d-md-block">
+                    <h5 class=" bounceInDown">Donate Blood & Save a Life</h5>
+                    <p class=" bounceInLeft">Donating blood can help other people to maintain good health or <br> allow
+                        them to stay alive.
+                        There may also be benefits of blood donation for <br> the donor.
+                        However, a person may wish to discuss the possible risks <br> before giving blood.</p>
+
+                    <div class=" vbh">
+
+                        <a href="{% url 'donate' %}">
+                            <div class="btn btn-danger  bounceInUp"> Donate Now </div>
+                        </a>
+                        <div class="btn btn-danger  bounceInUp"> Contact US </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+</div>
+
+<!--*************** About Us Starts Here ***************-->
+<section id="about" class="contianer-fluid about-us">
+    <div class="container">
+        <div class="row session-title">
+            <h2>About Us</h2>
+            <p> Blood Donors bring Sunshine.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text">
+                <h2>About Blood Doners</h2>
+                <p>A blood donation occurs when a person voluntarily has blood drawn and used for transfusions
+                    and/or made into biopharmaceutical medications by a process called fractionation
+                    (separation of whole blood components). Donation may be of whole blood,
+                    or of specific components directly (apheresis). Blood banks often participate in the
+                    collection process as well as the procedures that follow it.</p>
+                <p> Today in the developed world, most blood donors are unpaid volunteers who donate blood
+                    for a community supply. In some countries, established supplies are limited and
+                    donors usually give blood when family or friends need a transfusion (directed donation).
+                    Many donors donate for several reasons, such as a form of charity, general awareness regarding the
+                    demand for blood,
+                    increased confidence in oneself, helping a personal friend or relative, and social pressure.</p>
+                <p>Potential donors are evaluated for anything that might make their blood unsafe to use.
+                    The screening includes testing for diseases that can be transmitted by a blood transfusion,
+                    including HIV and viral hepatitis.
+                    The donor must also answer questions about medical history and take a short physical examination to
+                    make sure the donation is
+                    not hazardous to their health. How often a donor can donate varies from days to months based on what
+                    component they donate
+                    and the laws of the country where the donation takes place.</p>
+                <p>The amount of blood drawn and the methods vary. The collection can be done manually or with automated
+                    equipment that takes only
+                    specific components of the blood. Most of the components of blood used for transfusions have a
+                    short shelf life, and maintaining a constant supply is a persistent problem.</p>
+            </div>
+            <div class="col-md-6 image">
+                <img src="{% static 'images/about.jpg' %}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ################# Gallery Start Here #######################--->
+
+<div id="gallery" class="gallery container-fluid">
+    <div class="container">
+        <div class="row session-title">
+            <h2>Checkout Our Gallery</h2>
+        </div>
+        <div class="gallery-row row">
+            <div id="gg-screen"></div>
+            <div class="gg-box">
+                <div class="gg-element">
+                    <img src="{% static 'images/gallery/g1.jpg' %}">
+                </div>
+                <div class="gg-element">
+                    <img src="{% static 'images/gallery/g2.jpg' %}">
+                </div>
+                <div class="gg-element">
+                    <img src="{% static 'images/gallery/g3.jpg' %}">
+                </div>
+                <div class="gg-element">
+                    <img src="{% static 'images/gallery/g4.jpg' %}">
+                </div>
+                <div class="gg-element">
+                    <img src="{% static 'images/gallery/g5.jpg' %}">
+                </div>
+                <div class="gg-element">
+                    <img src="{% static 'images/gallery/g6.jpg' %}">
+                </div>
+                <div class="gg-element">
+                    <img src="{% static 'images/gallery/g7.jpg' %}">
+                </div>
+                <div class="gg-element">
+                    <img src="{% static 'images/gallery/g8.jpg' %}">
+                </div>
+                <div class="gg-element">
+                    <img src="{% static 'images/gallery/g9.jpg' %}">
+                </div>
+                <div class="gg-element">
+                    <img src="{% static 'images/gallery/g10.jpg' %}">
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- ################# Donation Details Start Here #######################--->
+
+<section id="process" class="donation-care">
+    <div class="container">
+        <div class="row session-title">
+            <h2>Donation Details</h2>
+        </div>
+        <div class="row ">
+            {% for r in register %}
+            <div class="col-md-3 col-sm-6 vd">
+                <div class="bkjiu">
+                    <img style="height: 180px; width: 240px;" src="{{ r.photo.url }}" alt="">
+                    <h4>{{ r.full_name }}</h4>
+                    <div class="d-flex align-items-center">
+                        <img style="height: 30px; width: 30px;" src="{% static 'images/blood-drop.jpg' %}" alt="">
+                        <p>{{ r.blood_group }}</p>
+                    </div>
+                    <a href="{% url 'details' r.id %}"><button class="btn btn-sm btn-danger">More Details<i class="fas fa-arrow-right"></i></button></a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    </div>
+
+
+    </div>
+</section>
+
+
+
+
+<!--################### Our Blog Starts Here #######################--->
+<div id="blog" class="blog-container contaienr-fluid">
+    <div class="container">
+        <div class="session-title row">
+            <h2>Latest Blog</h2>
+            
+        </div>
+        <div class="row news-row">
+            <div class="col-md-6">
+                <div class="news-card">
+                    <div class="image">
+                        <img src="{% static 'images/blog/blog_01.jpg' %}" alt="">
+                    </div>
+                    <div class="detail">
+                        <h3>Donating Platelets</h3>
+                        <p>Blood consists of several components,  distinct and potentially lifesaving role. Platelets are a blood component that plays a critical role in supporting life.</p>
+                        <p class="footp">
+                            27 Comments <span>/</span>
+                            Blog Design <span>/</span>
+                            Read More
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="news-card">
+                    <div class="image">
+                        <img src="{% static 'images/blog/blog_02.jpg' %}" alt="">
+                    </div>
+                    <div class="detail">
+                        <h3>Stories of Lives Transformed by Blood Donation</h3>
+                        <p>The sacrifices made to supply those transfusions do not go unnoticed by recipients or their families. Many gain a new perspective and appreciation for life. </p>
+                        <p class="footp">
+                            27 Comments <span>/</span>
+                            Blog Design <span>/</span>
+                            Read More
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="news-card">
+                    <div class="image">
+                        <img src="{% static 'images/blog/blog_03.jpg' %}" alt="">
+                    </div>
+                    <div class="detail">
+                        <h3>Giving Back to Donors</h3>
+                        <p>Without a steady blood supply, those suffering from cancer, childbirth complications,
+                             and many other medical conditions will lack the most essential element of survival. </p>
+                        <p class="footp">
+                            27 Comments <span>/</span>
+                            Blog Design <span>/</span>
+                            Read More
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="news-card">
+                    <div class="image">
+                        <img src="{% static 'images/blog/blog_04.jpg' %}" alt="">
+                    </div>
+                    <div class="detail">
+                        <h3>The Human Side of Blood Donation</h3>
+                        <p>Behind every pint of donated blood lies an incredible story,
+                             one of lives touched by the generosity of strangers. But every blood donation is more than a random act of kindness.</p>
+                        <p class="footp">
+                            27 Comments <span>/</span>
+                            Blog Design <span>/</span>
+                            Read More
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'footer.html' %}
+{% endblock %}
